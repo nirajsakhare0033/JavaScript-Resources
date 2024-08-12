@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>3 Ways of writing Events in JavaScript</h1>
+  <h1>What is Event In JavaScript</h1>
+  <h1><li>MouseEvent Event</li></h1>
+  <h1><li>Keyboard Event</li></h1>
+  <h1><li>InputEvent</li></h1>
+
+  <h1>Inline Event</h1>
+  <button onclick="alert('welcome')">greeting</button>
+  <button ondblclick="alert('welcome again')">greeting again</button>
+  <button onmouseover="alert('welcome mouse over')">greetings</button>
+  <hr />
+  <h1>Dom Event Handler</h1>
+  <button id="btn1">Greeting</button>
+  <button id="btn2"> Greeting</button>
+  
+  <script>
+document.getElementById('btn1').onclick = () => {
+  alert('to do world list');
+};
+
+
+  </script>
+</body>
+</html>

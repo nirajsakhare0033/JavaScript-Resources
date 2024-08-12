@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    height: 100vh;
+    background-image: linear-gradient(
+      to right top,
+      #051937
+      #004d7a
+      #008793
+      #00bf72
+      #a8eb12
+
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<body>
+  <div>
+    <button id="btn1">#051937</button>
+    <button id="btn2"></button>
+    <h2>Copy Your Code Here</h2>
+    <div class="copyCode">
+      background-image: linear-gradient(to right, rgb(92,145,229), rgb(152,63,198))
+    </div>
+  </div>
+</body>
+<script>
+  let btn1 = document.getElementById("btn1")
+  let btn2 = document.getElementById("btn2")
+
+  
+  
+  const handleButton1 = () => {
+    let myHexavalues = "0123456789abcdef";
+    let colors = "#"
+    for(let i=0; i<6; i++)
+      //console.log(myHexavalues[Math.floor(Math.random()*16)])
+    colors = colors + myHexavalues[Math.floor(Math.random()*16)]
+    console.log(colors)
+
+      
+  }
+
+  btn1.addEventListener("click", handleButton1)
+   btn2.addEventListener("click", handleButton2)
+</script>
+</html>
